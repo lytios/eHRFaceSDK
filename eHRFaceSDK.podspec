@@ -30,13 +30,9 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'eHRFaceSDK/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'eHRFaceSDK' => ['eHRFaceSDK/Assets/*.png']
-  # }
+  s.vendored_framework = 'eHRFaceSDK/Classes/HRFaceSDK.framework'
+  s.resource ='eHRFaceSDK/Assets/HRFaceImageBundle.bundle'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+
 end

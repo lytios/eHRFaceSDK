@@ -7,12 +7,15 @@
 //
 
 #import "HRFaceAppDelegate.h"
+#import "HRFaceViewController.h"
 
 @implementation HRFaceAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    HRFaceViewController *sighVC = [HRFaceViewController new];
+    self.window.rootViewController = [[UINavigationController alloc]initWithRootViewController:sighVC];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

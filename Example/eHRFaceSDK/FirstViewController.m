@@ -1,19 +1,18 @@
 //
-//  HRFaceViewController.m
-//  eHRFaceSDK
+//  FirstViewController.m
+//  ICBCFace
 //
-//  Created by 24290265@qq.com on 08/01/2019.
-//  Copyright (c) 2019 24290265@qq.com. All rights reserved.
+//  Created by 吕清毅 on 2018/11/30.
+//  Copyright © 2018年 lqy. All rights reserved.
 //
 
-#import "HRFaceViewController.h"
+#import "FirstViewController.h"
 #import <HRFaceSDK/OutsideViewController.h>
 #import <AVFoundation/AVFoundation.h>
 #import "UIView+Frame.h"
 #import "BaseMacro.h"
 
-
-@interface HRFaceViewController ()<OutsideViewControllerDelegate>
+@interface FirstViewController ()<OutsideViewControllerDelegate>
 
 @property (nonatomic, strong) UITextField *firstTF;
 @property (nonatomic, strong) UITextField *secondTF;
@@ -29,10 +28,9 @@
 @property (nonatomic, strong) UITextField *twelveTF;
 @property (nonatomic, strong) NSString *baseUrl;
 @property (nonatomic, strong)void(^faceSignResult)(NSString*string);//面签是否成功
-
 @end
 
-@implementation HRFaceViewController
+@implementation FirstViewController
 
 - (void)viewWillAppear:(BOOL)animated
 {
@@ -169,12 +167,12 @@
     sevenTF.font =iphone5x_4_0?FontWithSize(14): FontWithSize(16);
     self.sevenTF = sevenTF;
     [mainView addSubview:sevenTF];
-    
+
     UIView *lineV7 = [UIView new];
     lineV7.frame = CGRectMake(0, 234, SCREENWIDTH, 1);
     lineV7.backgroundColor = UIColorFromHex(0xEFEFEF);
     [mainView addSubview:lineV7];
-    
+
     UITextField *eightTF = [UITextField new];
     eightTF.frame = CGRectMake(20, 235, SCREENWIDTH-20, 30);
     //foutthTF.keyboardType = UIKeyboardTypeDecimalPad;
@@ -186,12 +184,12 @@
     eightTF.font =iphone5x_4_0?FontWithSize(14): FontWithSize(16);
     self.eightTF = eightTF;
     [mainView addSubview:eightTF];
-    
+
     UIView *lineV8 = [UIView new];
     lineV8.frame = CGRectMake(0, 264, SCREENWIDTH, 1);
     lineV8.backgroundColor = UIColorFromHex(0xEFEFEF);
     [mainView addSubview:lineV8];
-    
+
     UITextField *nineTF = [UITextField new];
     nineTF.frame = CGRectMake(20, 265, SCREENWIDTH-20, 30);
     //foutthTF.keyboardType = UIKeyboardTypeDecimalPad;
@@ -203,12 +201,12 @@
     nineTF.font =iphone5x_4_0?FontWithSize(14): FontWithSize(16);
     self.ninTF = nineTF;
     [mainView addSubview:nineTF];
-    
+
     UIView *lineV9 = [UIView new];
     lineV9.frame = CGRectMake(0, 294, SCREENWIDTH, 1);
     lineV9.backgroundColor = UIColorFromHex(0xEFEFEF);
     [mainView addSubview:lineV9];
-    
+
     UITextField *tenTF = [UITextField new];
     tenTF.frame = CGRectMake(20, 295, SCREENWIDTH-20, 30);
     //foutthTF.keyboardType = UIKeyboardTypeDecimalPad;
@@ -220,12 +218,12 @@
     tenTF.font =iphone5x_4_0?FontWithSize(14): FontWithSize(16);
     self.tenTF = tenTF;
     [mainView addSubview:tenTF];
-    
+
     UIView *lineV10 = [UIView new];
     lineV10.frame = CGRectMake(0, 324, SCREENWIDTH, 1);
     lineV10.backgroundColor = UIColorFromHex(0xEFEFEF);
     [mainView addSubview:lineV10];
-    
+
     UITextField *elevenTF = [UITextField new];
     elevenTF.frame = CGRectMake(20, 325, SCREENWIDTH-20, 30);
     //foutthTF.keyboardType = UIKeyboardTypeDecimalPad;
@@ -237,12 +235,12 @@
     elevenTF.font =iphone5x_4_0?FontWithSize(14): FontWithSize(16);
     self.elevenTF = elevenTF;
     [mainView addSubview:elevenTF];
-    
+
     UIView *lineV11 = [UIView new];
     lineV11.frame = CGRectMake(0, 354, SCREENWIDTH, 1);
     lineV11.backgroundColor = UIColorFromHex(0xEFEFEF);
     [mainView addSubview:lineV11];
-    
+
     UITextField *twelveTF = [UITextField new];
     twelveTF.frame = CGRectMake(20, 355, SCREENWIDTH-20, 30);
     //foutthTF.keyboardType = UIKeyboardTypeDecimalPad;
@@ -254,7 +252,7 @@
     twelveTF.font =iphone5x_4_0?FontWithSize(14): FontWithSize(16);
     self.twelveTF = twelveTF;
     [mainView addSubview:twelveTF];
-    
+
     UIView *lineV12 = [UIView new];
     lineV12.frame = CGRectMake(0, 384, SCREENWIDTH, 1);
     lineV12.backgroundColor = UIColorFromHex(0xEFEFEF);
@@ -290,7 +288,7 @@
     outSideVC.loanAmount = self.tenTF.text; //意向金额
     outSideVC.actualLoanAmount = self.elevenTF.text; //贷款金额
     outSideVC.instalmentNum = self.twelveTF.text; //贷款分期
-    outSideVC.delegate = self;
+    outSideVC.delegate = self;  
     //自己创建的block,可在面签成功代理中设置
     [self setFaceSignResult:^(NSString *string) {
         //第三方机构去做自己想要的操作。

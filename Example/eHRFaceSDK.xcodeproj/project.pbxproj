@@ -8,6 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		299BF2E6EDCDA7C8CB45E3CB /* Pods_eHRFaceSDK_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42B0725333BCEE547C34F331 /* Pods_eHRFaceSDK_Example.framework */; };
+		3E90415B22F296B400DCCCA8 /* bh_liveness.lic in Resources */ = {isa = PBXBuildFile; fileRef = 3E90415A22F296B300DCCCA8 /* bh_liveness.lic */; };
+		3E90430722F2CE9A00DCCCA8 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E90430622F2CE9900DCCCA8 /* libc++.tbd */; };
+		3E90430F22F2D24F00DCCCA8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E90430E22F2D24F00DCCCA8 /* SystemConfiguration.framework */; };
+		3E90431122F2D25700DCCCA8 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E90431022F2D25700DCCCA8 /* CoreMotion.framework */; };
+		3E90431322F2D25D00DCCCA8 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E90431222F2D25D00DCCCA8 /* CoreMedia.framework */; };
+		3E90431522F2D26400DCCCA8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E90431422F2D26400DCCCA8 /* AVFoundation.framework */; };
+		3EC9FC5A22F2DC1600973E27 /* BHFaceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EC9FC3D22F2DC1600973E27 /* BHFaceController.m */; };
+		3EC9FC5B22F2DC1600973E27 /* BHFace_Resource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3EC9FC3F22F2DC1600973E27 /* BHFace_Resource.bundle */; };
+		3EC9FC5C22F2DC1600973E27 /* libBHFaceDetector.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EC9FC4022F2DC1600973E27 /* libBHFaceDetector.a */; };
+		3EC9FC5D22F2DC1600973E27 /* SZNumberLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EC9FC4C22F2DC1600973E27 /* SZNumberLabel.m */; };
+		3EC9FC5E22F2DC1600973E27 /* ToolView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EC9FC4E22F2DC1600973E27 /* ToolView.m */; };
+		3EC9FC5F22F2DC1600973E27 /* UIImage+fixOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EC9FC5022F2DC1600973E27 /* UIImage+fixOrientation.m */; };
+		3EC9FC6022F2DC1600973E27 /* UILabel+BHLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EC9FC5222F2DC1600973E27 /* UILabel+BHLabel.m */; };
+		3EC9FC6122F2DC1600973E27 /* UIView+STLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EC9FC5422F2DC1600973E27 /* UIView+STLayout.m */; };
+		3EC9FC6222F2DC1600973E27 /* VideoRecorder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EC9FC5622F2DC1600973E27 /* VideoRecorder.m */; };
+		3EC9FC6322F2DC1600973E27 /* haarcascade_frontalface_alt.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3EC9FC5722F2DC1600973E27 /* haarcascade_frontalface_alt.xml */; };
+		3EC9FC6422F2DC1600973E27 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EC9FC5922F2DC1600973E27 /* UIView+Frame.m */; };
+		3EC9FC6722F2DC5C00973E27 /* HRFaceSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EC9FC6522F2DC5C00973E27 /* HRFaceSDK.framework */; };
+		3EC9FC6822F2DC5C00973E27 /* HRFaceImageBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3EC9FC6622F2DC5C00973E27 /* HRFaceImageBundle.bundle */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -16,29 +35,50 @@
 		6003F59E195388D20070C39A /* HRFaceAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* HRFaceAppDelegate.m */; };
 		6003F5A7195388D20070C39A /* HRFaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* HRFaceViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
-		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
-		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
-		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
-		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
-		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		B0A6F345D4F0976BE5ACCBEF /* Pods_eHRFaceSDK_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45BF37C256C230AC9367B90D /* Pods_eHRFaceSDK_Tests.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		6003F5B3195388D20070C39A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6003F582195388D10070C39A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6003F589195388D20070C39A;
-			remoteInfo = eHRFaceSDK;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
-		04D1F7CB6D690093A743238A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		35A3F5FAF63C3BDEF8EAA075 /* eHRFaceSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = eHRFaceSDK.podspec; path = ../eHRFaceSDK.podspec; sourceTree = "<group>"; };
+		04D1F7CB6D690093A743238A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		35A3F5FAF63C3BDEF8EAA075 /* eHRFaceSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = eHRFaceSDK.podspec; path = ../eHRFaceSDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3E90415A22F296B300DCCCA8 /* bh_liveness.lic */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bh_liveness.lic; sourceTree = "<group>"; };
+		3E90430622F2CE9900DCCCA8 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		3E90430E22F2D24F00DCCCA8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3E90431022F2D25700DCCCA8 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		3E90431222F2D25D00DCCCA8 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		3E90431422F2D26400DCCCA8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3EC9FC3A22F2DC1600973E27 /* BaseMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseMacro.h; sourceTree = "<group>"; };
+		3EC9FC3C22F2DC1600973E27 /* BHFaceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHFaceController.h; sourceTree = "<group>"; };
+		3EC9FC3D22F2DC1600973E27 /* BHFaceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHFaceController.m; sourceTree = "<group>"; };
+		3EC9FC3F22F2DC1600973E27 /* BHFace_Resource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = BHFace_Resource.bundle; sourceTree = "<group>"; };
+		3EC9FC4022F2DC1600973E27 /* libBHFaceDetector.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBHFaceDetector.a; sourceTree = "<group>"; };
+		3EC9FC4222F2DC1600973E27 /* BHFace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHFace.h; sourceTree = "<group>"; };
+		3EC9FC4322F2DC1600973E27 /* BHFaceCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHFaceCommon.h; sourceTree = "<group>"; };
+		3EC9FC4422F2DC1600973E27 /* BHFaceDetector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHFaceDetector.h; sourceTree = "<group>"; };
+		3EC9FC4522F2DC1600973E27 /* BHFaceEnumType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHFaceEnumType.h; sourceTree = "<group>"; };
+		3EC9FC4622F2DC1600973E27 /* BHImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHImage.h; sourceTree = "<group>"; };
+		3EC9FC4722F2DC1600973E27 /* BHPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHPoint.h; sourceTree = "<group>"; };
+		3EC9FC4822F2DC1600973E27 /* BHRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHRect.h; sourceTree = "<group>"; };
+		3EC9FC4922F2DC1600973E27 /* STLivenessDetectorDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STLivenessDetectorDelegate.h; sourceTree = "<group>"; };
+		3EC9FC4A22F2DC1600973E27 /* STTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STTracker.h; sourceTree = "<group>"; };
+		3EC9FC4B22F2DC1600973E27 /* SZNumberLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SZNumberLabel.h; sourceTree = "<group>"; };
+		3EC9FC4C22F2DC1600973E27 /* SZNumberLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SZNumberLabel.m; sourceTree = "<group>"; };
+		3EC9FC4D22F2DC1600973E27 /* ToolView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToolView.h; sourceTree = "<group>"; };
+		3EC9FC4E22F2DC1600973E27 /* ToolView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToolView.m; sourceTree = "<group>"; };
+		3EC9FC4F22F2DC1600973E27 /* UIImage+fixOrientation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+fixOrientation.h"; sourceTree = "<group>"; };
+		3EC9FC5022F2DC1600973E27 /* UIImage+fixOrientation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+fixOrientation.m"; sourceTree = "<group>"; };
+		3EC9FC5122F2DC1600973E27 /* UILabel+BHLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+BHLabel.h"; sourceTree = "<group>"; };
+		3EC9FC5222F2DC1600973E27 /* UILabel+BHLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+BHLabel.m"; sourceTree = "<group>"; };
+		3EC9FC5322F2DC1600973E27 /* UIView+STLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+STLayout.h"; sourceTree = "<group>"; };
+		3EC9FC5422F2DC1600973E27 /* UIView+STLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+STLayout.m"; sourceTree = "<group>"; };
+		3EC9FC5522F2DC1600973E27 /* VideoRecorder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoRecorder.h; sourceTree = "<group>"; };
+		3EC9FC5622F2DC1600973E27 /* VideoRecorder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoRecorder.m; sourceTree = "<group>"; };
+		3EC9FC5722F2DC1600973E27 /* haarcascade_frontalface_alt.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = haarcascade_frontalface_alt.xml; sourceTree = "<group>"; };
+		3EC9FC5822F2DC1600973E27 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		3EC9FC5922F2DC1600973E27 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		3EC9FC6522F2DC5C00973E27 /* HRFaceSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HRFaceSDK.framework; path = eHRFaceSDK/HRFaceSDK.framework; sourceTree = "<group>"; };
+		3EC9FC6622F2DC5C00973E27 /* HRFaceImageBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = HRFaceImageBundle.bundle; path = eHRFaceSDK/HRFaceImageBundle.bundle; sourceTree = "<group>"; };
 		42B0725333BCEE547C34F331 /* Pods_eHRFaceSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eHRFaceSDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		438B6ECDD409A8586AE4E3C0 /* Pods-eHRFaceSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eHRFaceSDK_Example.debug.xcconfig"; path = "Target Support Files/Pods-eHRFaceSDK_Example/Pods-eHRFaceSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		45BF37C256C230AC9367B90D /* Pods_eHRFaceSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eHRFaceSDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,18 +95,15 @@
 		6003F5A5195388D20070C39A /* HRFaceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HRFaceViewController.h; sourceTree = "<group>"; };
 		6003F5A6195388D20070C39A /* HRFaceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HRFaceViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		6003F5AE195388D20070C39A /* eHRFaceSDK_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = eHRFaceSDK_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		818B807599FB3F074B64D77E /* Pods-eHRFaceSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eHRFaceSDK_Tests.debug.xcconfig"; path = "Target Support Files/Pods-eHRFaceSDK_Tests/Pods-eHRFaceSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AC28D4A8EBC3ACD6A4274B98 /* Pods-eHRFaceSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eHRFaceSDK_Tests.release.xcconfig"; path = "Target Support Files/Pods-eHRFaceSDK_Tests/Pods-eHRFaceSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		DBF5F4DB277DA589B9DCA766 /* Pods-eHRFaceSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eHRFaceSDK_Example.release.xcconfig"; path = "Target Support Files/Pods-eHRFaceSDK_Example/Pods-eHRFaceSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
-		F872BBB2BB9032979A8C9ECB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F872BBB2BB9032979A8C9ECB /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +111,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E90431522F2D26400DCCCA8 /* AVFoundation.framework in Frameworks */,
+				3E90431322F2D25D00DCCCA8 /* CoreMedia.framework in Frameworks */,
+				3E90431122F2D25700DCCCA8 /* CoreMotion.framework in Frameworks */,
+				3EC9FC6722F2DC5C00973E27 /* HRFaceSDK.framework in Frameworks */,
+				3E90430F22F2D24F00DCCCA8 /* SystemConfiguration.framework in Frameworks */,
+				3EC9FC5C22F2DC1600973E27 /* libBHFaceDetector.a in Frameworks */,
+				3E90430722F2CE9A00DCCCA8 /* libc++.tbd in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
@@ -81,23 +125,76 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6003F5AB195388D20070C39A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
-				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
-				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				B0A6F345D4F0976BE5ACCBEF /* Pods_eHRFaceSDK_Tests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3EC9FC3922F2DC1600973E27 /* file */ = {
+			isa = PBXGroup;
+			children = (
+				3EC9FC3A22F2DC1600973E27 /* BaseMacro.h */,
+				3EC9FC3B22F2DC1600973E27 /* FaceRecognitionSDK */,
+				3EC9FC5722F2DC1600973E27 /* haarcascade_frontalface_alt.xml */,
+				3EC9FC5822F2DC1600973E27 /* UIView+Frame.h */,
+				3EC9FC5922F2DC1600973E27 /* UIView+Frame.m */,
+			);
+			name = file;
+			path = eHRFaceSDK/file;
+			sourceTree = "<group>";
+		};
+		3EC9FC3B22F2DC1600973E27 /* FaceRecognitionSDK */ = {
+			isa = PBXGroup;
+			children = (
+				3EC9FC3C22F2DC1600973E27 /* BHFaceController.h */,
+				3EC9FC3D22F2DC1600973E27 /* BHFaceController.m */,
+				3EC9FC3E22F2DC1600973E27 /* BHResourceDependence */,
+				3EC9FC4122F2DC1600973E27 /* CodeSection */,
+			);
+			path = FaceRecognitionSDK;
+			sourceTree = "<group>";
+		};
+		3EC9FC3E22F2DC1600973E27 /* BHResourceDependence */ = {
+			isa = PBXGroup;
+			children = (
+				3EC9FC3F22F2DC1600973E27 /* BHFace_Resource.bundle */,
+				3EC9FC4022F2DC1600973E27 /* libBHFaceDetector.a */,
+			);
+			path = BHResourceDependence;
+			sourceTree = "<group>";
+		};
+		3EC9FC4122F2DC1600973E27 /* CodeSection */ = {
+			isa = PBXGroup;
+			children = (
+				3EC9FC4222F2DC1600973E27 /* BHFace.h */,
+				3EC9FC4322F2DC1600973E27 /* BHFaceCommon.h */,
+				3EC9FC4422F2DC1600973E27 /* BHFaceDetector.h */,
+				3EC9FC4522F2DC1600973E27 /* BHFaceEnumType.h */,
+				3EC9FC4622F2DC1600973E27 /* BHImage.h */,
+				3EC9FC4722F2DC1600973E27 /* BHPoint.h */,
+				3EC9FC4822F2DC1600973E27 /* BHRect.h */,
+				3EC9FC4922F2DC1600973E27 /* STLivenessDetectorDelegate.h */,
+				3EC9FC4A22F2DC1600973E27 /* STTracker.h */,
+				3EC9FC4B22F2DC1600973E27 /* SZNumberLabel.h */,
+				3EC9FC4C22F2DC1600973E27 /* SZNumberLabel.m */,
+				3EC9FC4D22F2DC1600973E27 /* ToolView.h */,
+				3EC9FC4E22F2DC1600973E27 /* ToolView.m */,
+				3EC9FC4F22F2DC1600973E27 /* UIImage+fixOrientation.h */,
+				3EC9FC5022F2DC1600973E27 /* UIImage+fixOrientation.m */,
+				3EC9FC5122F2DC1600973E27 /* UILabel+BHLabel.h */,
+				3EC9FC5222F2DC1600973E27 /* UILabel+BHLabel.m */,
+				3EC9FC5322F2DC1600973E27 /* UIView+STLayout.h */,
+				3EC9FC5422F2DC1600973E27 /* UIView+STLayout.m */,
+				3EC9FC5522F2DC1600973E27 /* VideoRecorder.h */,
+				3EC9FC5622F2DC1600973E27 /* VideoRecorder.m */,
+			);
+			path = CodeSection;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				3EC9FC6622F2DC5C00973E27 /* HRFaceImageBundle.bundle */,
+				3EC9FC6522F2DC5C00973E27 /* HRFaceSDK.framework */,
+				3EC9FC3922F2DC1600973E27 /* file */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for eHRFaceSDK */,
 				6003F5B5195388D20070C39A /* Tests */,
@@ -111,7 +208,6 @@
 			isa = PBXGroup;
 			children = (
 				6003F58A195388D20070C39A /* eHRFaceSDK_Example.app */,
-				6003F5AE195388D20070C39A /* eHRFaceSDK_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,6 +215,11 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3E90431422F2D26400DCCCA8 /* AVFoundation.framework */,
+				3E90431222F2D25D00DCCCA8 /* CoreMedia.framework */,
+				3E90431022F2D25700DCCCA8 /* CoreMotion.framework */,
+				3E90430E22F2D24F00DCCCA8 /* SystemConfiguration.framework */,
+				3E90430622F2CE9900DCCCA8 /* libc++.tbd */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
@@ -132,9 +233,10 @@
 		6003F593195388D20070C39A /* Example for eHRFaceSDK */ = {
 			isa = PBXGroup;
 			children = (
+				3E90415A22F296B300DCCCA8 /* bh_liveness.lic */,
+				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F59C195388D20070C39A /* HRFaceAppDelegate.h */,
 				6003F59D195388D20070C39A /* HRFaceAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* HRFaceViewController.h */,
 				6003F5A6195388D20070C39A /* HRFaceViewController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
@@ -190,10 +292,7 @@
 			children = (
 				438B6ECDD409A8586AE4E3C0 /* Pods-eHRFaceSDK_Example.debug.xcconfig */,
 				DBF5F4DB277DA589B9DCA766 /* Pods-eHRFaceSDK_Example.release.xcconfig */,
-				818B807599FB3F074B64D77E /* Pods-eHRFaceSDK_Tests.debug.xcconfig */,
-				AC28D4A8EBC3ACD6A4274B98 /* Pods-eHRFaceSDK_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -208,7 +307,8 @@
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				B2D10C55195EEBA594C6C3B2 /* [CP] Embed Pods Frameworks */,
+				35C05DF24E69B20DD528D56B /* [CP] Embed Pods Frameworks */,
+				94C64D915F28107BC3AA662B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -218,25 +318,6 @@
 			productName = eHRFaceSDK;
 			productReference = 6003F58A195388D20070C39A /* eHRFaceSDK_Example.app */;
 			productType = "com.apple.product-type.application";
-		};
-		6003F5AD195388D20070C39A /* eHRFaceSDK_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "eHRFaceSDK_Tests" */;
-			buildPhases = (
-				864C319028CF972232A0C977 /* [CP] Check Pods Manifest.lock */,
-				6003F5AA195388D20070C39A /* Sources */,
-				6003F5AB195388D20070C39A /* Frameworks */,
-				6003F5AC195388D20070C39A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6003F5B4195388D20070C39A /* PBXTargetDependency */,
-			);
-			name = eHRFaceSDK_Tests;
-			productName = eHRFaceSDKTests;
-			productReference = 6003F5AE195388D20070C39A /* eHRFaceSDK_Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -248,8 +329,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "24290265@qq.com";
 				TargetAttributes = {
-					6003F5AD195388D20070C39A = {
-						TestTargetID = 6003F589195388D20070C39A;
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 335X85BJF8;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -267,7 +349,6 @@
 			projectRoot = "";
 			targets = (
 				6003F589195388D20070C39A /* eHRFaceSDK_Example */,
-				6003F5AD195388D20070C39A /* eHRFaceSDK_Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -277,18 +358,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E90415B22F296B400DCCCA8 /* bh_liveness.lic in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				3EC9FC5B22F2DC1600973E27 /* BHFace_Resource.bundle in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
+				3EC9FC6322F2DC1600973E27 /* haarcascade_frontalface_alt.xml in Resources */,
+				3EC9FC6822F2DC5C00973E27 /* HRFaceImageBundle.bundle in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6003F5AC195388D20070C39A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,29 +394,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		864C319028CF972232A0C977 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-eHRFaceSDK_Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B2D10C55195EEBA594C6C3B2 /* [CP] Embed Pods Frameworks */ = {
+		35C05DF24E69B20DD528D56B /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -348,17 +403,63 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-eHRFaceSDK_Example/Pods-eHRFaceSDK_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/eHRFaceSDK/eHRFaceSDK.framework",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${PODS_ROOT}/NIMSDK/NIMSDK/NIMSDK.framework",
+				"${PODS_ROOT}/NIMSDK/NIMAVChat/NIMAVChat.framework",
+				"${PODS_ROOT}/NIMSDK/NIMAVChat/NMC.framework",
+				"${PODS_ROOT}/NIMSDK/NIMAVChat/NMCBasicModuleFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/eCameraLib/eCameraLib.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/eHRFaceSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NIMSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NIMAVChat.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NMC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NMCBasicModuleFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/eCameraLib.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-eHRFaceSDK_Example/Pods-eHRFaceSDK_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94C64D915F28107BC3AA662B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-eHRFaceSDK_Example/Pods-eHRFaceSDK_Example-resources.sh",
+				"${PODS_ROOT}/NIMSDK/NIMAVChat/Resources/NMCVideoFilter.bundle",
+				"${PODS_ROOT}/../../../eRelyOnLib/eRelyOnLib/eRelyOnLib/Assets/MGFaceIDLiveCustomDetect.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NMCVideoFilter.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MGFaceIDLiveCustomDetect.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-eHRFaceSDK_Example/Pods-eHRFaceSDK_Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -369,28 +470,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* HRFaceAppDelegate.m in Sources */,
+				3EC9FC5F22F2DC1600973E27 /* UIImage+fixOrientation.m in Sources */,
+				3EC9FC6122F2DC1600973E27 /* UIView+STLayout.m in Sources */,
 				6003F5A7195388D20070C39A /* HRFaceViewController.m in Sources */,
+				3EC9FC5E22F2DC1600973E27 /* ToolView.m in Sources */,
+				3EC9FC6222F2DC1600973E27 /* VideoRecorder.m in Sources */,
+				3EC9FC5D22F2DC1600973E27 /* SZNumberLabel.m in Sources */,
+				3EC9FC5A22F2DC1600973E27 /* BHFaceController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6003F5AA195388D20070C39A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6003F5BC195388D20070C39A /* Tests.m in Sources */,
+				3EC9FC6022F2DC1600973E27 /* UILabel+BHLabel.m in Sources */,
+				3EC9FC6422F2DC1600973E27 /* UIView+Frame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		6003F5B4195388D20070C39A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6003F589195388D20070C39A /* eHRFaceSDK_Example */;
-			targetProxy = 6003F5B3195388D20070C39A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6003F596195388D20070C39A /* InfoPlist.strings */ = {
@@ -438,6 +531,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -478,6 +572,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -498,12 +593,27 @@
 			baseConfigurationReference = 438B6ECDD409A8586AE4E3C0 /* Pods-eHRFaceSDK_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "eHRFaceSDK/eHRFaceSDK-Prefix.pch";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 335X85BJF8;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/eHRFaceSDK",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "eHRFaceSDK/eHRFaceSDK-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/eHRFaceSDK",
+					"$(PROJECT_DIR)/eHRFaceSDK/file/FaceRecognitionSDK/BHResourceDependence",
+				);
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.quanmai.hrfaxthree;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "XC WildcardDEV";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
 			};
@@ -514,60 +624,29 @@
 			baseConfigurationReference = DBF5F4DB277DA589B9DCA766 /* Pods-eHRFaceSDK_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "eHRFaceSDK/eHRFaceSDK-Prefix.pch";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 335X85BJF8;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/eHRFaceSDK",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "eHRFaceSDK/eHRFaceSDK-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/eHRFaceSDK",
+					"$(PROJECT_DIR)/eHRFaceSDK/file/FaceRecognitionSDK/BHResourceDependence",
+				);
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = com.quanmai.hrfaxthree;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "XC WildcardDEV";
 				SWIFT_VERSION = 4.0;
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		6003F5C3195388D20070C39A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 818B807599FB3F074B64D77E /* Pods-eHRFaceSDK_Tests.debug.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Tests/Tests-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eHRFaceSDK_Example.app/eHRFaceSDK_Example";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		6003F5C4195388D20070C39A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AC28D4A8EBC3ACD6A4274B98 /* Pods-eHRFaceSDK_Tests.release.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
-				INFOPLIST_FILE = "Tests/Tests-Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/eHRFaceSDK_Example.app/eHRFaceSDK_Example";
-				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -588,15 +667,6 @@
 			buildConfigurations = (
 				6003F5C0195388D20070C39A /* Debug */,
 				6003F5C1195388D20070C39A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "eHRFaceSDK_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6003F5C3195388D20070C39A /* Debug */,
-				6003F5C4195388D20070C39A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

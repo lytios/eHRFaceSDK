@@ -3,11 +3,18 @@ use_frameworks!
 platform :ios, '8.0'
 
 target 'eHRFaceSDK_Example' do
-  pod 'eHRFaceSDK', :path => '../'
+#  pod 'eHRFaceSDK', :path => '../'
+  pod 'eRelyOnLib', :path => '/Users/liuyutian/Desktop/github/eRelyOnLib/eRelyOnLib/'
+  #pod 'eHRFaceSDK', :path => '/Users/liuyutian/Desktop/github/eHRFaceSDK/'
 
-  target 'eHRFaceSDK_Tests' do
-    inherit! :search_paths
-
-    
-  end
+  pod 'AFNetworking'
+  pod 'SDWebImage'
+  pod 'MBProgressHUD'
+  pod 'IQKeyboardManager'
+  pod 'NIMSDK'
+  pod 'Masonry'
+  pod 'eCameraLib'
+  pod 'MJRefresh'
+  pod 'MJExtension'
+  pod 'eCameraLib'
 end
