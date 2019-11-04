@@ -44,6 +44,9 @@ typedef void (^GoBackData)(NSString *statue);
 @property (nonatomic, copy) NSString *firstMoney; //首付款 //选传
 @property (nonatomic, copy) NSString *installmentMoney; //分期金额 //选传
 @property (nonatomic, copy) NSString *serviceFee; //按揭服务费 //选传
+@property (nonatomic, copy) NSString *carPrice; //车价 //选传
+
+
 
 @property (nonatomic, assign) BOOL isBack;
 @property (nonatomic, copy) GoBackData backData;
