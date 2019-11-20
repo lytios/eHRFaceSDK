@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'eHRFaceSDK'
-  s.version          = '3.1.4'
+  s.version          = '3.1.4.1'
   s.summary          = 'A short description of eHRFaceSDK.'
 
 # This description is used to generate tags and improve search results.
@@ -25,7 +25,7 @@ TODO: Add long description of the pod here.
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '24290265@qq.com' => '24290265@qq.com' }
-  s.source           = { :git => 'https://github.com/lytios/eHRFaceSDK.git', :tag => 'v3.1.4' }
+  s.source           = { :git => 'https://github.com/lytios/eHRFaceSDK.git', :tag => 'v3.1.4.1' }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
