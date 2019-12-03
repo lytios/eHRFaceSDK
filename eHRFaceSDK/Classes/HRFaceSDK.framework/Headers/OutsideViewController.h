@@ -19,6 +19,7 @@ typedef void (^GoBackData)(NSString *statue);
 @end
 
 @interface OutsideViewController : UIViewController
+@property (nonatomic, copy) NSString *bankTitle;
 @property (nonatomic, copy) NSString *bankCode;
 @property (nonatomic, copy) NSString *assuerNo;
 @property (nonatomic, copy) NSString *orderNo;
@@ -31,8 +32,8 @@ typedef void (^GoBackData)(NSString *statue);
 @property (nonatomic, assign) BOOL IsIndependent; //是否是独立面签;
 @property (nonatomic, assign) BOOL IsOnline;
 @property (nonatomic, strong) NSDictionary * Nimdata;
-
-
+@property (nonatomic, assign) BOOL isFromImageSign;
+@property (nonatomic,copy) NSString *coopCode;
 @property (nonatomic, copy) NSString *clientIdCard;//身份证号
 @property (nonatomic, copy) NSString *clientName;//身份证姓名
 @property (nonatomic, copy) NSString *carType;//车型
@@ -40,7 +41,7 @@ typedef void (^GoBackData)(NSString *statue);
 @property (nonatomic, copy) NSString *actualLoanAmount;//贷款金额
 @property (nonatomic, copy) NSString *instalmentNum;//贷款期限
 
-
+@property (nonatomic, copy) NSString *authTaskId;
 @property (nonatomic, copy) NSString *firstMoney; //首付款 //选传
 @property (nonatomic, copy) NSString *installmentMoney; //分期金额 //选传
 @property (nonatomic, copy) NSString *serviceFee; //按揭服务费 //选传
