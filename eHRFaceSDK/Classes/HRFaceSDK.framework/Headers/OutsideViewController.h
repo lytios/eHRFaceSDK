@@ -19,6 +19,8 @@ typedef void (^GoBackData)(NSString *statue);
 @end
 
 @interface OutsideViewController : UIViewController
+
+@property (nonatomic, strong) UIColor *headColor;
 @property (nonatomic, copy) NSString *bankTitle;
 @property (nonatomic, copy) NSString *bankCode;
 @property (nonatomic, copy) NSString *assuerNo;
