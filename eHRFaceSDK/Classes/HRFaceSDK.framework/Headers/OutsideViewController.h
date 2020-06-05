@@ -27,7 +27,7 @@ typedef void (^GoBackData)(NSString *statue);
 @property (nonatomic, copy) NSString *orderNo;
 @property (nonatomic, copy) NSString *regfrom;
 @property (nonatomic, copy) NSString *business_type; //业务类型
-@property (nonatomic, assign) NSInteger userType;//用户类型：0-主借款人，1-共还人
+@property (nonatomic, assign) NSInteger userType;//用户类型。0:主借款人,1共还人,2担保人3共借人 4.指标人
 @property (nonatomic, copy) NSString * esbUrl;
 @property (nonatomic, copy) NSString * url;
 @property (nonatomic,assign) BOOL isIdCardNecessary;
@@ -44,6 +44,8 @@ typedef void (^GoBackData)(NSString *statue);
 @property (nonatomic, copy) NSString *instalmentNum;//贷款期限
 
 @property (nonatomic, copy) NSString *authTaskId;
+
+@property (nonatomic, copy) NSString *capital; //贷款本金 //选传
 @property (nonatomic, copy) NSString *firstMoney; //首付款 //选传
 @property (nonatomic, copy) NSString *installmentMoney; //分期金额 //选传
 @property (nonatomic, copy) NSString *serviceFee; //按揭服务费 //选传
