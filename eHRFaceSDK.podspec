@@ -20,7 +20,7 @@ TODO: Add long description of the pod here.
   s.dependency 'AFNetworking'
   s.dependency 'SDWebImage'
   s.dependency 'IQKeyboardManager'
-  s.dependency 'NIMSDK','6.10.1'
+  s.dependency 'NIMSDK'
   s.dependency 'Masonry'
   s.dependency 'MJRefresh'
   s.dependency 'MJExtension'
