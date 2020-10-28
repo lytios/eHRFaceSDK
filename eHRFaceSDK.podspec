@@ -17,14 +17,5 @@ TODO: Add long description of the pod here.
   s.vendored_framework = 'eHRFaceSDK/Classes/HRFaceSDK.framework'
   s.resource ='eHRFaceSDK/Assets/HRFaceImageBundle.bundle'
   s.dependency 'AliyunOSSiOS'
-  s.dependency 'AFNetworking'
-  s.dependency 'SDWebImage'
-  s.dependency 'IQKeyboardManager'
-  s.dependency 'NIMSDK'
-  s.dependency 'Masonry'
-  s.dependency 'MJRefresh'
-  s.dependency 'MJExtension'
-  s.dependency 'WPAttributedMarkup'
-  s.dependency 'HRLivingBodyDetection'~>'1.0.3'
-  s.dependency 'eCameraLib'
+
 end
