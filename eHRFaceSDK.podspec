@@ -25,4 +25,6 @@ TODO: Add long description of the pod here.
   s.dependency 'MJRefresh'
   s.dependency 'MJExtension'
   s.dependency 'WPAttributedMarkup'
+  s.dependency 'HRLivingBodyDetection'~>'1.0.3'
+  s.dependency 'eCameraLib'
 end
