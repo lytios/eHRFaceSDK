@@ -17,5 +17,5 @@ TODO: Add long description of the pod here.
   s.vendored_framework = 'eHRFaceSDK/Classes/HRFaceSDK.framework'
   s.resource ='eHRFaceSDK/Assets/HRFaceImageBundle.bundle'
   s.dependency 'AliyunOSSiOS'
-
+ 
 end
