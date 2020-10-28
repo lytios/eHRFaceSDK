@@ -13,7 +13,7 @@ TODO: Add long description of the pod here.
   s.author           = { '24290265@qq.com' => '24290265@qq.com' }
   s.source           = { :git => 'https://github.com/lytios/eHRFaceSDK.git', :tag => 'v3.1.9.6' }
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
   s.vendored_framework = 'eHRFaceSDK/Classes/HRFaceSDK.framework'
   s.resource ='eHRFaceSDK/Assets/HRFaceImageBundle.bundle'
  
