@@ -2,7 +2,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'eHRFaceSDK'
-  s.version          = '0.0.6'
+  s.version          = '3.2.1'
   s.summary          = 'A short description of eHRFaceSDK.'
   s.description      = <<-DESC
 TODO: Add long description of the pod here.
@@ -11,7 +11,7 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/lytios/eHRFaceSDK'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '24290265@qq.com' => '24290265@qq.com' }
-  s.source           = { :git => 'https://github.com/lytios/eHRFaceSDK.git', :tag => 'v0.0.6' }
+  s.source           = { :git => 'https://github.com/lytios/eHRFaceSDK.git', :tag => 'v3.2.1' }
 
   s.ios.deployment_target = '8.0'
   s.vendored_framework = 'eHRFaceSDK/Classes/HRFaceSDK.framework'
@@ -20,7 +20,7 @@ TODO: Add long description of the pod here.
   s.dependency 'AFNetworking'
   s.dependency 'SDWebImage'
   s.dependency 'IQKeyboardManager'
-  s.dependency 'NIMSDK','6.10.1'
+  s.dependency 'NIMSDK'
   s.dependency 'Masonry'
   s.dependency 'MJRefresh'
   s.dependency 'MJExtension'
