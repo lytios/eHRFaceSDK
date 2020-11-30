@@ -42,7 +42,7 @@ typedef void (^GoBackData)(NSString *statue);
 @property (nonatomic, copy) NSString *loanAmount;//意向金额
 @property (nonatomic, copy) NSString *actualLoanAmount;//贷款金额
 @property (nonatomic, copy) NSString *instalmentNum;//贷款期限
-
+@property (nonatomic, copy) NSString *isForceMachine;
 @property (nonatomic, copy) NSString *authTaskId;
 
 @property (nonatomic, copy) NSString *capital; //贷款本金 //选传
