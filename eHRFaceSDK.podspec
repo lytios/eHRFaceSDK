@@ -14,8 +14,15 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/lytios/eHRFaceSDK.git', :tag => 'v3.2.2' }
 
   s.ios.deployment_target = '9.0'
-
+  s.vendored_framework = 'eHRFaceSDK/Classes/HRFaceSDK.framework'
   s.resource ='eHRFaceSDK/Assets/HRFaceImageBundle.bundle'
-
- 
+  s.dependency 'AliyunOSSiOS'
+  s.dependency 'AFNetworking'
+  s.dependency 'SDWebImage'
+  s.dependency 'IQKeyboardManager'
+  s.dependency 'NIMSDK'
+  s.dependency 'Masonry'
+  s.dependency 'MJRefresh'
+  s.dependency 'MJExtension'
+  s.dependency 'WPAttributedMarkup'
 end
