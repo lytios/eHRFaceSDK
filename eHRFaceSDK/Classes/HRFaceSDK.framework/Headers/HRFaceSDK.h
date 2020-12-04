@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "OutsideViewController.h"
 //! Project version number for HRFaceSDK.
 FOUNDATION_EXPORT double HRFaceSDKVersionNumber;
 
