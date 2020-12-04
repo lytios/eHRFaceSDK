@@ -2,11 +2,11 @@
 //  HRFaceSDK.h
 //  HRFaceSDK
 //
-//  Created by 吕清毅 on 2018/12/5.
-//  Copyright © 2018年 lqy. All rights reserved.
+//  Created by liuyutian on 2020/12/4.
+//  Copyright © 2020 lqy. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for HRFaceSDK.
 FOUNDATION_EXPORT double HRFaceSDKVersionNumber;
