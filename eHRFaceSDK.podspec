@@ -25,4 +25,5 @@ TODO: Add long description of the pod here.
   s.dependency 'MJRefresh'
   s.dependency 'MJExtension'
   s.dependency 'WPAttributedMarkup'
+  s.pod_target_xcconfig = { 'VALID_ARCHS' => 'armv7 arm64' }
 end
